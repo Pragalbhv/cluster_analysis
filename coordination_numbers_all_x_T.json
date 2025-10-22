@@ -1,0 +1,1446 @@
+{
+  "x0.4_T1200": {
+    "x": 0.4,
+    "T": 1200,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.40/T1200K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.028963221283815135,
+      "CN_Na_Pu": 0.0005325033348243353,
+      "CN_Cl_Cl": 0.2045951007617191,
+      "CN_Cl_Na": 1.063260948876564,
+      "CN_Cl_Pu": 1.1660560780150588,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.433912127653342
+    }
+  },
+  "x0.4_T1100": {
+    "x": 0.4,
+    "T": 1100,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.40/T1100K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.025549822774114613,
+      "CN_Na_Pu": 0.000299362344604109,
+      "CN_Cl_Cl": 0.1906883020987193,
+      "CN_Cl_Na": 1.108639835710781,
+      "CN_Cl_Pu": 1.198554766506664,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.4978829043161643
+    }
+  },
+  "x0.4_T800": {
+    "x": 0.4,
+    "T": 800,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.40/T800K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.012092570773199663,
+      "CN_Na_Pu": 3.896934675017142e-05,
+      "CN_Cl_Cl": 0.1526033597781402,
+      "CN_Cl_Na": 1.2499268851071321,
+      "CN_Cl_Pu": 1.5836699581473312,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.9862002030326034
+    }
+  },
+  "x0.4_T1300": {
+    "x": 0.4,
+    "T": 1300,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.40/T1300K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.03267312590456484,
+      "CN_Na_Pu": 0.0006904577119327831,
+      "CN_Cl_Cl": 0.21603297373597272,
+      "CN_Cl_Na": 1.0383874642984987,
+      "CN_Cl_Pu": 1.1396663082440017,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.3940867462784734
+    }
+  },
+  "x0.4_T1000": {
+    "x": 0.4,
+    "T": 1000,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.40/T1000K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.020186858750751276,
+      "CN_Na_Pu": 0.00019695409838199764,
+      "CN_Cl_Cl": 0.18305642208827552,
+      "CN_Cl_Na": 1.1610662067774018,
+      "CN_Cl_Pu": 1.2413037743680468,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.585426403233724
+    }
+  },
+  "x0.4_T1250": {
+    "x": 0.4,
+    "T": 1250,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.40/T1250K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.029798580137027332,
+      "CN_Na_Pu": 0.0007901177166388463,
+      "CN_Cl_Cl": 0.2073837478958165,
+      "CN_Cl_Na": 1.048138455213354,
+      "CN_Cl_Pu": 1.1457074552137747,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.4012296583229453
+    }
+  },
+  "x0.4_T900": {
+    "x": 0.4,
+    "T": 900,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.40/T900K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.016735800024294624,
+      "CN_Na_Pu": 0.0001568582253722422,
+      "CN_Cl_Cl": 0.16777894383295816,
+      "CN_Cl_Na": 1.2007876636857606,
+      "CN_Cl_Pu": 1.2734978026981307,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.6420644102168493
+    }
+  },
+  "x0.27_T1200": {
+    "x": 0.27,
+    "T": 1200,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.27/T1200K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.05300014219025253,
+      "CN_Na_Pu": 0.00045852536689428133,
+      "CN_Cl_Cl": 0.1548609680283514,
+      "CN_Cl_Na": 1.5175049233345599,
+      "CN_Cl_Pu": 0.9399250955039037,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.612290986866815
+    }
+  },
+  "x0.27_T1100": {
+    "x": 0.27,
+    "T": 1100,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.27/T1100K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.04613227471813821,
+      "CN_Na_Pu": 0.00034285559085337944,
+      "CN_Cl_Cl": 0.13931938482048778,
+      "CN_Cl_Na": 1.535971775332384,
+      "CN_Cl_Pu": 0.941016643999397,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.616307804152269
+    }
+  },
+  "x0.27_T800": {
+    "x": 0.27,
+    "T": 800,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.27/T800K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.02724554860964442,
+      "CN_Na_Pu": 5.8482742437199576e-05,
+      "CN_Cl_Cl": 0.10608013182328127,
+      "CN_Cl_Na": 1.7488706995236354,
+      "CN_Cl_Pu": 1.025779153635727,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.8807299849826435
+    }
+  },
+  "x0.27_T1300": {
+    "x": 0.27,
+    "T": 1300,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.27/T1300K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.05986014311156479,
+      "CN_Na_Pu": 0.000545012203189429,
+      "CN_Cl_Cl": 0.16216084964538968,
+      "CN_Cl_Na": 1.45563107147659,
+      "CN_Cl_Pu": 0.909152501265086,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.5269444223870656
+    }
+  },
+  "x0.27_T1000": {
+    "x": 0.27,
+    "T": 1000,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.27/T1000K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.039077097724220425,
+      "CN_Na_Pu": 0.00022582808807296344,
+      "CN_Cl_Cl": 0.12732263550632333,
+      "CN_Cl_Na": 1.619418506796333,
+      "CN_Cl_Pu": 0.9782746926170732,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.7250158349197293
+    }
+  },
+  "x0.27_T1250": {
+    "x": 0.27,
+    "T": 1250,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.27/T1250K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.058066220064193215,
+      "CN_Na_Pu": 0.000608284734779823,
+      "CN_Cl_Cl": 0.15516555205618443,
+      "CN_Cl_Na": 1.47480257114253,
+      "CN_Cl_Pu": 0.9176222942585077,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.547590417457222
+    }
+  },
+  "x0.27_T900": {
+    "x": 0.27,
+    "T": 900,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.27/T900K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.03306857449993375,
+      "CN_Na_Pu": 7.35106496175334e-05,
+      "CN_Cl_Cl": 0.11714908110432029,
+      "CN_Cl_Na": 1.6785226025836313,
+      "CN_Cl_Pu": 1.001364072859388,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.7970357565473396
+    }
+  },
+  "x1.0_T1200": {
+    "x": 1.0,
+    "T": 1200,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x1.00/T1200K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": null,
+      "CN_Na_Pu": null,
+      "CN_Cl_Cl": 0.3773755096485,
+      "CN_Cl_Na": null,
+      "CN_Cl_Pu": 1.7590887871907006,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": null
+    }
+  },
+  "x1.0_T1100": {
+    "x": 1.0,
+    "T": 1100,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x1.00/T1100K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": null,
+      "CN_Na_Pu": null,
+      "CN_Cl_Cl": 0.36812626221775074,
+      "CN_Cl_Na": null,
+      "CN_Cl_Pu": 2.3982210832910975,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": null
+    }
+  },
+  "x1.0_T800": {
+    "x": 1.0,
+    "T": 800,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x1.00/T800K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": null,
+      "CN_Na_Pu": null,
+      "CN_Cl_Cl": 0.30302564468861437,
+      "CN_Cl_Na": null,
+      "CN_Cl_Pu": 2.4801981461138873,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": null
+    }
+  },
+  "x1.0_T1300": {
+    "x": 1.0,
+    "T": 1300,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x1.00/T1300K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": null,
+      "CN_Na_Pu": null,
+      "CN_Cl_Cl": 0.39371471980298134,
+      "CN_Cl_Na": null,
+      "CN_Cl_Pu": 1.7317640759083457,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": null
+    }
+  },
+  "x1.0_T1000": {
+    "x": 1.0,
+    "T": 1000,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x1.00/T1000K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": null,
+      "CN_Na_Pu": null,
+      "CN_Cl_Cl": 0.34321344927240904,
+      "CN_Cl_Na": null,
+      "CN_Cl_Pu": 2.379186205859768,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": null
+    }
+  },
+  "x1.0_T1250": {
+    "x": 1.0,
+    "T": 1250,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x1.00/T1250K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": null,
+      "CN_Na_Pu": null,
+      "CN_Cl_Cl": 0.3875406594954591,
+      "CN_Cl_Na": null,
+      "CN_Cl_Pu": 1.746255867523846,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": null
+    }
+  },
+  "x1.0_T900": {
+    "x": 1.0,
+    "T": 900,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x1.00/T900K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": null,
+      "CN_Na_Pu": null,
+      "CN_Cl_Cl": 0.31999174101549677,
+      "CN_Cl_Na": null,
+      "CN_Cl_Pu": 2.405579185202606,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": null
+    }
+  },
+  "x0.88_T1200": {
+    "x": 0.88,
+    "T": 1200,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.88/T1200K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.002795307073491227,
+      "CN_Na_Pu": 0.0002726141626546511,
+      "CN_Cl_Cl": 0.3559254261086651,
+      "CN_Cl_Na": 0.14320823943784283,
+      "CN_Cl_Pu": 1.6714085035179758,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.1705421690644835
+    }
+  },
+  "x0.88_T800": {
+    "x": 0.88,
+    "T": 800,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.88/T800K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.0003892310360208845,
+      "CN_Na_Pu": 0.0,
+      "CN_Cl_Cl": 0.28844472571217517,
+      "CN_Cl_Na": 0.1686959295216436,
+      "CN_Cl_Pu": 2.3483404629334,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.8054811181672186
+    }
+  },
+  "x0.88_T1300": {
+    "x": 0.88,
+    "T": 1300,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.88/T1300K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.0031233306381970504,
+      "CN_Na_Pu": 0.0003131408456591186,
+      "CN_Cl_Cl": 0.36827453688404277,
+      "CN_Cl_Na": 0.14038484397016202,
+      "CN_Cl_Pu": 1.641129199024575,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.1497885798787797
+    }
+  },
+  "x0.88_T1000": {
+    "x": 0.88,
+    "T": 1000,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.88/T1000K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.0011000409133904222,
+      "CN_Na_Pu": 3.938541683086213e-05,
+      "CN_Cl_Cl": 0.3249326690387566,
+      "CN_Cl_Na": 0.1556577397324672,
+      "CN_Cl_Pu": 2.297415193963066,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.77800560273429
+    }
+  },
+  "x0.88_T1250": {
+    "x": 0.88,
+    "T": 1250,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.88/T1250K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.002346264272415509,
+      "CN_Na_Pu": 0.00035290544869805433,
+      "CN_Cl_Cl": 0.36395673273006385,
+      "CN_Cl_Na": 0.1432476169704209,
+      "CN_Cl_Pu": 1.663174612441186,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.1703789621416707
+    }
+  },
+  "x0.88_T900": {
+    "x": 0.88,
+    "T": 900,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.88/T900K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.00015776096566055722,
+      "CN_Na_Pu": 7.893725715954631e-05,
+      "CN_Cl_Cl": 0.30932456237169476,
+      "CN_Cl_Na": 0.16087864118522868,
+      "CN_Cl_Pu": 2.3151503523243293,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.7853535558812528
+    }
+  },
+  "x0.6_T1200": {
+    "x": 0.6,
+    "T": 1200,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.60/T1200K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.01017867432452671,
+      "CN_Na_Pu": 0.0002953181110201575,
+      "CN_Cl_Cl": 0.27524619078109325,
+      "CN_Cl_Na": 0.5853438428398148,
+      "CN_Cl_Pu": 1.443961813486803,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.304551847107711
+    }
+  },
+  "x0.6_T1100": {
+    "x": 0.6,
+    "T": 1100,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.60/T1100K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.008537262758111388,
+      "CN_Na_Pu": 0.0001957201038879258,
+      "CN_Cl_Cl": 0.264738754797422,
+      "CN_Cl_Na": 0.6033151853091491,
+      "CN_Cl_Pu": 1.4730682298136522,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.341122169920223
+    }
+  },
+  "x0.6_T800": {
+    "x": 0.6,
+    "T": 800,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.60/T800K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.0033589458069201474,
+      "CN_Na_Pu": 1.9524272174406468e-05,
+      "CN_Cl_Cl": 0.23211275005346665,
+      "CN_Cl_Na": 0.6835153224582896,
+      "CN_Cl_Pu": 2.0143531639040893,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.9299812364158457
+    }
+  },
+  "x0.6_T1300": {
+    "x": 0.6,
+    "T": 1300,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.60/T1300K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.01076547700519602,
+      "CN_Na_Pu": 0.0005256389426657633,
+      "CN_Cl_Cl": 0.28944383553651076,
+      "CN_Cl_Na": 0.5622194905680554,
+      "CN_Cl_Pu": 1.3914482075237125,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.2431115336282788
+    }
+  },
+  "x0.6_T1000": {
+    "x": 0.6,
+    "T": 1000,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.60/T1000K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.007172510980584407,
+      "CN_Na_Pu": 7.792178540267878e-05,
+      "CN_Cl_Cl": 0.25447883911782304,
+      "CN_Cl_Na": 0.6252621639051487,
+      "CN_Cl_Pu": 1.5103746182758497,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.3901156212988215
+    }
+  },
+  "x0.6_T1250": {
+    "x": 0.6,
+    "T": 1250,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.60/T1250K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.012445468663183593,
+      "CN_Na_Pu": 0.000506790019391454,
+      "CN_Cl_Cl": 0.2833615116688213,
+      "CN_Cl_Na": 0.5728423687849954,
+      "CN_Cl_Pu": 1.4247292080008,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.2809330884546166
+    }
+  },
+  "x0.6_T900": {
+    "x": 0.6,
+    "T": 900,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.60/T900K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.005362947018685847,
+      "CN_Na_Pu": 9.848535748572536e-05,
+      "CN_Cl_Cl": 0.24566764653855724,
+      "CN_Cl_Na": 0.6561779221237004,
+      "CN_Cl_Pu": 1.9802176247038732,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.8820631933661307
+    }
+  },
+  "x0.75_T1200": {
+    "x": 0.75,
+    "T": 1200,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.75/T1200K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.004803282686879824,
+      "CN_Na_Pu": 0.0,
+      "CN_Cl_Cl": 0.3239825527333015,
+      "CN_Cl_Na": 0.31907995750404494,
+      "CN_Cl_Pu": 1.5678834719324408,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.210945982169787
+    }
+  },
+  "x0.75_T1100": {
+    "x": 0.75,
+    "T": 1100,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.75/T1100K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.004076497686123032,
+      "CN_Na_Pu": 0.00023589479397587938,
+      "CN_Cl_Cl": 0.3128659271293559,
+      "CN_Cl_Na": 0.3325109762985222,
+      "CN_Cl_Pu": 1.6355192705139396,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.2808961739418177
+    }
+  },
+  "x0.75_T800": {
+    "x": 0.75,
+    "T": 800,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.75/T800K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.0011659016001286599,
+      "CN_Na_Pu": 0.0,
+      "CN_Cl_Cl": 0.2627141150812037,
+      "CN_Cl_Na": 0.37058698687377833,
+      "CN_Cl_Pu": 2.2083377087954115,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.8416388107503936
+    }
+  },
+  "x0.75_T1300": {
+    "x": 0.75,
+    "T": 1300,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.75/T1300K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.005180150896777035,
+      "CN_Na_Pu": 0.0005100829502788091,
+      "CN_Cl_Cl": 0.33647566958854047,
+      "CN_Cl_Na": 0.3100489248999898,
+      "CN_Cl_Pu": 1.5458722388934332,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.1923968333819635
+    }
+  },
+  "x0.75_T1000": {
+    "x": 0.75,
+    "T": 1000,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.75/T1000K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.004036447867596361,
+      "CN_Na_Pu": 0.00023372739722607282,
+      "CN_Cl_Cl": 0.29698974952375246,
+      "CN_Cl_Na": 0.33921604217842327,
+      "CN_Cl_Pu": 2.104158328662741,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.7403641203649167
+    }
+  },
+  "x0.75_T1250": {
+    "x": 0.75,
+    "T": 1250,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.75/T1250K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.007102212500007758,
+      "CN_Na_Pu": 0.000772407456614589,
+      "CN_Cl_Cl": 0.3274946623140257,
+      "CN_Cl_Na": 0.3124353242731611,
+      "CN_Cl_Pu": 1.544679867586878,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.184609854174065
+    }
+  },
+  "x0.75_T900": {
+    "x": 0.75,
+    "T": 900,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.75/T900K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.002809805331586094,
+      "CN_Na_Pu": 0.0001560535777058478,
+      "CN_Cl_Cl": 0.28712662429435504,
+      "CN_Cl_Na": 0.35931964178717185,
+      "CN_Cl_Pu": 2.1798592815918063,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.826305547673333
+    }
+  },
+  "x0.67_T1200": {
+    "x": 0.67,
+    "T": 1200,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.67/T1200K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.0070015338423576115,
+      "CN_Na_Pu": 0.0002589227020955592,
+      "CN_Cl_Cl": 0.3015474462642168,
+      "CN_Cl_Na": 0.4570592670023397,
+      "CN_Cl_Pu": 1.5020702138155437,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.2606769270821
+    }
+  },
+  "x0.67_T1100": {
+    "x": 0.67,
+    "T": 1100,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.67/T1100K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.005141397687766145,
+      "CN_Na_Pu": 0.00020914041443969135,
+      "CN_Cl_Cl": 0.28262236610449276,
+      "CN_Cl_Na": 0.4760460649903399,
+      "CN_Cl_Pu": 1.551806608972764,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.3104750400675966
+    }
+  },
+  "x0.67_T800": {
+    "x": 0.67,
+    "T": 800,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.67/T800K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.002286562036111741,
+      "CN_Na_Pu": 0.0,
+      "CN_Cl_Cl": 0.24761984912912233,
+      "CN_Cl_Na": 0.5361512654065386,
+      "CN_Cl_Pu": 2.1079077150983854,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.8916788296340465
+    }
+  },
+  "x0.67_T1300": {
+    "x": 0.67,
+    "T": 1300,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.67/T1300K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.008276944749209328,
+      "CN_Na_Pu": 0.0003647630847479121,
+      "CN_Cl_Cl": 0.3066366678388358,
+      "CN_Cl_Na": 0.44301348714502214,
+      "CN_Cl_Pu": 1.4696204137125555,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.2192705686964134
+    }
+  },
+  "x0.67_T1000": {
+    "x": 0.67,
+    "T": 1000,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.67/T1000K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.004408492949981798,
+      "CN_Na_Pu": 0.00010392922861138858,
+      "CN_Cl_Cl": 0.2743296247624128,
+      "CN_Cl_Na": 0.48787852715851626,
+      "CN_Cl_Pu": 2.0095777071293455,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.7717858590502744
+    }
+  },
+  "x0.67_T1250": {
+    "x": 0.67,
+    "T": 1250,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.67/T1250K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.008730175671678202,
+      "CN_Na_Pu": 0.0005921101735440472,
+      "CN_Cl_Cl": 0.3045910628710178,
+      "CN_Cl_Na": 0.4463879851181858,
+      "CN_Cl_Pu": 1.477740098759225,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.2287191467484284
+    }
+  },
+  "x0.67_T900": {
+    "x": 0.67,
+    "T": 900,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.67/T900K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.004658546411691731,
+      "CN_Na_Pu": 5.3166870368029255e-05,
+      "CN_Cl_Cl": 0.268082427303837,
+      "CN_Cl_Na": 0.5184794947745203,
+      "CN_Cl_Pu": 2.084560752858053,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.8711226749364105
+    }
+  },
+  "x0.0_T1200": {
+    "x": 0.0,
+    "T": 1200,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.00/T1200K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": null,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.16970457261654393,
+      "CN_Na_Pu": null,
+      "CN_Cl_Cl": 0.03493014109856904,
+      "CN_Cl_Na": 3.1453766752203776,
+      "CN_Cl_Pu": null,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": null
+    }
+  },
+  "x0.0_T1100": {
+    "x": 0.0,
+    "T": 1100,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.00/T1100K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": null,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.15783345284130573,
+      "CN_Na_Pu": null,
+      "CN_Cl_Cl": 0.025715322746016563,
+      "CN_Cl_Na": 3.247649120468607,
+      "CN_Cl_Pu": null,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": null
+    }
+  },
+  "x0.0_T800": {
+    "x": 0.0,
+    "T": 800,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.00/T800K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": null,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.11449357269156821,
+      "CN_Na_Pu": null,
+      "CN_Cl_Cl": 0.01179499527094067,
+      "CN_Cl_Na": 3.6338402714783666,
+      "CN_Cl_Pu": null,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": null
+    }
+  },
+  "x0.0_T1300": {
+    "x": 0.0,
+    "T": 1300,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.00/T1300K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": null,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.18133890148278503,
+      "CN_Na_Pu": null,
+      "CN_Cl_Cl": 0.03760741744179874,
+      "CN_Cl_Na": 3.0902617218503226,
+      "CN_Cl_Pu": null,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": null
+    }
+  },
+  "x0.0_T1000": {
+    "x": 0.0,
+    "T": 1000,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.00/T1000K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": null,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.14312384032503705,
+      "CN_Na_Pu": null,
+      "CN_Cl_Cl": 0.021626271259940967,
+      "CN_Cl_Na": 3.3471165182169456,
+      "CN_Cl_Pu": null,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": null
+    }
+  },
+  "x0.0_T1250": {
+    "x": 0.0,
+    "T": 1250,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.00/T1250K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": null,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.1750747161095219,
+      "CN_Na_Pu": null,
+      "CN_Cl_Cl": 0.03578965052755151,
+      "CN_Cl_Na": 3.107917487935179,
+      "CN_Cl_Pu": null,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": null
+    }
+  },
+  "x0.0_T900": {
+    "x": 0.0,
+    "T": 900,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.00/T900K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": null,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.12779436404908495,
+      "CN_Na_Pu": null,
+      "CN_Cl_Cl": 0.016594924394439686,
+      "CN_Cl_Na": 3.50140148455211,
+      "CN_Cl_Pu": null,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": null
+    }
+  },
+  "x0.5_T1200": {
+    "x": 0.5,
+    "T": 1200,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.50/T1200K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.018380756899472262,
+      "CN_Na_Pu": 0.00039440283121548075,
+      "CN_Cl_Cl": 0.239000037337475,
+      "CN_Cl_Na": 0.7944361612975185,
+      "CN_Cl_Pu": 1.3040605104792569,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.3374967091142502
+    }
+  },
+  "x0.5_T1100": {
+    "x": 0.5,
+    "T": 1100,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.50/T1100K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.014863521666197836,
+      "CN_Na_Pu": 0.0002746356921636498,
+      "CN_Cl_Cl": 0.22973050583743052,
+      "CN_Cl_Na": 0.833066329374275,
+      "CN_Cl_Pu": 1.3496952755277645,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.4124921107394703
+    }
+  },
+  "x0.5_T800": {
+    "x": 0.5,
+    "T": 800,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.50/T800K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.00691892408618657,
+      "CN_Na_Pu": 6.22729618667293e-05,
+      "CN_Cl_Cl": 0.1938691955601407,
+      "CN_Cl_Na": 0.938445591133589,
+      "CN_Cl_Pu": 1.8052654383146212,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.937580225008351
+    }
+  },
+  "x0.5_T1300": {
+    "x": 0.5,
+    "T": 1300,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.50/T1300K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.020944235210713934,
+      "CN_Na_Pu": 0.000720333108308855,
+      "CN_Cl_Cl": 0.25304962038431605,
+      "CN_Cl_Na": 0.7702989592176471,
+      "CN_Cl_Pu": 1.2752470088313594,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.2985955884333227
+    }
+  },
+  "x0.5_T1000": {
+    "x": 0.5,
+    "T": 1000,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.50/T1000K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.012967202434800047,
+      "CN_Na_Pu": 0.00017854124152654832,
+      "CN_Cl_Cl": 0.2223580688065311,
+      "CN_Cl_Na": 0.8605171496248727,
+      "CN_Cl_Pu": 1.380774639632806,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.46364985806421
+    }
+  },
+  "x0.5_T1250": {
+    "x": 0.5,
+    "T": 1250,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.50/T1250K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.020217328355068235,
+      "CN_Na_Pu": 0.0007404903265487866,
+      "CN_Cl_Cl": 0.2476420302539613,
+      "CN_Cl_Na": 0.7965759458795112,
+      "CN_Cl_Pu": 1.3104145726713938,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.354632548804866
+    }
+  },
+  "x0.5_T900": {
+    "x": 0.5,
+    "T": 900,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.50/T900K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.009542188503734656,
+      "CN_Na_Pu": 0.0001098175978135525,
+      "CN_Cl_Cl": 0.20469474329537007,
+      "CN_Cl_Na": 0.9042626581414654,
+      "CN_Cl_Pu": 1.4358088510711937,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.5447662525080292
+    }
+  },
+  "x0.07_T1200": {
+    "x": 0.07,
+    "T": 1200,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.07/T1200K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.13307128821802555,
+      "CN_Na_Pu": 0.0001537006831620952,
+      "CN_Cl_Cl": 0.06833229585692266,
+      "CN_Cl_Na": 2.5714215807900556,
+      "CN_Cl_Pu": 0.33542809451871364,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.975181971165692
+    }
+  },
+  "x0.07_T1100": {
+    "x": 0.07,
+    "T": 1100,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.07/T1100K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.12007752598899565,
+      "CN_Na_Pu": 7.485531869717389e-05,
+      "CN_Cl_Cl": 0.05997826721321847,
+      "CN_Cl_Na": 2.6280957737846466,
+      "CN_Cl_Pu": 0.3389513773420697,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 3.0270254183399348
+    }
+  },
+  "x0.07_T800": {
+    "x": 0.07,
+    "T": 800,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.07/T800K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.08562900518080109,
+      "CN_Na_Pu": 3.612991009023854e-05,
+      "CN_Cl_Cl": 0.03719751087287498,
+      "CN_Cl_Na": 2.9804667446347044,
+      "CN_Cl_Pu": 0.3665580834380104,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 3.3842223389455897
+    }
+  },
+  "x0.07_T1300": {
+    "x": 0.07,
+    "T": 1300,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.07/T1300K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.14508625189053187,
+      "CN_Na_Pu": 0.00021089536656111572,
+      "CN_Cl_Cl": 0.07423319367727706,
+      "CN_Cl_Na": 2.495424238092961,
+      "CN_Cl_Pu": 0.32787476639213753,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.8975321981623754
+    }
+  },
+  "x0.07_T1000": {
+    "x": 0.07,
+    "T": 1000,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.07/T1000K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.11129227988126555,
+      "CN_Na_Pu": 6.0090758266220066e-05,
+      "CN_Cl_Cl": 0.05244760638569443,
+      "CN_Cl_Na": 2.736811342126324,
+      "CN_Cl_Pu": 0.34779689950722614,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 3.1370558480192448
+    }
+  },
+  "x0.07_T1250": {
+    "x": 0.07,
+    "T": 1250,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.07/T1250K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.13836501996864647,
+      "CN_Na_Pu": 0.00021008775408737042,
+      "CN_Cl_Cl": 0.07133890256751071,
+      "CN_Cl_Na": 2.525399197078876,
+      "CN_Cl_Pu": 0.33003323507735566,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.9267713347237425
+    }
+  },
+  "x0.07_T900": {
+    "x": 0.07,
+    "T": 900,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.07/T900K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.097332009935468,
+      "CN_Na_Pu": 6.019669831432899e-05,
+      "CN_Cl_Cl": 0.04369776406962544,
+      "CN_Cl_Na": 2.840502094352522,
+      "CN_Cl_Pu": 0.35508037473358667,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 3.2392802331557338
+    }
+  },
+  "x0.17_T1200": {
+    "x": 0.17,
+    "T": 1200,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.17/T1200K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.08882050664085597,
+      "CN_Na_Pu": 0.00034735518303329114,
+      "CN_Cl_Cl": 0.10983529060469951,
+      "CN_Cl_Na": 2.0072475689142624,
+      "CN_Cl_Pu": 0.6686023792719816,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.7856852387909434
+    }
+  },
+  "x0.17_T1100": {
+    "x": 0.17,
+    "T": 1100,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.17/T1100K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.0818736488392494,
+      "CN_Na_Pu": 0.00017930344836454348,
+      "CN_Cl_Cl": 0.09986065220974583,
+      "CN_Cl_Na": 2.047646351665622,
+      "CN_Cl_Pu": 0.6784883704065453,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.825995374281913
+    }
+  },
+  "x0.17_T800": {
+    "x": 0.17,
+    "T": 800,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.17/T800K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.05287215535002422,
+      "CN_Na_Pu": 1.5883818853588563e-05,
+      "CN_Cl_Cl": 0.06782036710876554,
+      "CN_Cl_Na": 2.335412466827954,
+      "CN_Cl_Pu": 0.7371476605325789,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 3.140380494469298
+    }
+  },
+  "x0.17_T1300": {
+    "x": 0.17,
+    "T": 1300,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.17/T1300K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.09631389076383726,
+      "CN_Na_Pu": 0.0004499339360630637,
+      "CN_Cl_Cl": 0.11576071814695194,
+      "CN_Cl_Na": 1.9193301040947293,
+      "CN_Cl_Pu": 0.6469994574545828,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.682090279696264
+    }
+  },
+  "x0.17_T1000": {
+    "x": 0.17,
+    "T": 1000,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.17/T1000K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.07043184200506192,
+      "CN_Na_Pu": 0.0001901703155797542,
+      "CN_Cl_Cl": 0.09057699353480514,
+      "CN_Cl_Na": 2.151738027078563,
+      "CN_Cl_Pu": 0.7015683529260499,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.9438833735394176
+    }
+  },
+  "x0.17_T1250": {
+    "x": 0.17,
+    "T": 1250,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.17/T1250K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.09164851753236423,
+      "CN_Na_Pu": 0.0003927029862075596,
+      "CN_Cl_Cl": 0.11299827867095691,
+      "CN_Cl_Na": 1.9665522862796903,
+      "CN_Cl_Pu": 0.6606865855373657,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.740237150488013
+    }
+  },
+  "x0.17_T900": {
+    "x": 0.17,
+    "T": 900,
+    "file": "/pscratch/sd/p/pvashi/irp/irp_mace_l_2/irp/density/NaCl-PuCl3/x0.17/T900K/dump.lammpstrj",
+    "coordination_numbers": {
+      "CN_Pu_Cl": null,
+      "CN_Pu_Na": null,
+      "CN_Pu_Pu": 0.0,
+      "CN_Na_Cl": null,
+      "CN_Na_Na": 0.05886829037002311,
+      "CN_Na_Pu": 9.343497591289264e-05,
+      "CN_Cl_Cl": 0.07686317555857568,
+      "CN_Cl_Na": 2.20222055451411,
+      "CN_Cl_Pu": 0.709073138135048,
+      "CN_Pu_any": null,
+      "CN_Na_any": null,
+      "CN_Cl_any": 2.9881568682077333
+    }
+  }
+}

@@ -8,7 +8,7 @@ Import from this module instead of redefining plotting functions in notebooks.
 from pathlib import Path
 from itertools import cycle
 from collections import Counter
-from typing import Dict, List, Any, Optional
+from typing import Dict, List, Any, Optional, Tuple
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -670,7 +670,7 @@ def analyze_bond_network(data: Any, names: np.ndarray) -> Counter:
     return bond_counts
 
 
-def plot_rdfs(rdf_data: Dict[str, np.ndarray], x: Optional[float] = None, P: Optional[float] = None, cutoffs: Optional[Dict[Any, float]] = None) -> None:
+def plot_rdfs(rdf_data: Dict[str, np.ndarray], x: Optional[float] = None, P: Optional[float] = None, cutoffs: Optional[Dict[Any, float]] = None, figsize: Tuple[float, float] = (4, 3)) -> None:
     """Plot RDF curves with consistent coloring and save figure.
 
     Parameters:
@@ -680,6 +680,7 @@ def plot_rdfs(rdf_data: Dict[str, np.ndarray], x: Optional[float] = None, P: Opt
         cutoffs: Optional mapping of pair -> cutoff distance. Keys may be strings like
                  'Cl-Na' or tuple pairs like ('Na','Cl'). Vertical lines will be drawn
                  for provided cutoffs with informative labels.
+        figsize: Figure size as (width, height) in inches. Defaults to (4, 3).
     """
     color_cycle = plt.rcParams["axes.prop_cycle"].by_key()["color"]
     rdf_pairs = ["Cl-Cl", "Cl-Na", "Cl-Pu", "Na-Na", "Na-Pu", "Pu-Pu"]
@@ -691,7 +692,7 @@ def plot_rdfs(rdf_data: Dict[str, np.ndarray], x: Optional[float] = None, P: Opt
             """
             a
             """,
-            figsize=(4, 3),
+            figsize=figsize,
             constrained_layout=True,
         )
 
@@ -701,7 +702,18 @@ def plot_rdfs(rdf_data: Dict[str, np.ndarray], x: Optional[float] = None, P: Opt
         for name, y in sorted(rdf_data.items(), key=lambda e: e[0]):
             if name == "r":
                 continue
-            axes[iax].plot(r, y, label=name, color=pair_to_color.get(name, None))
+            
+            # Use distinct color for complete RDF
+            if name == "complete":
+                color = "red"  # Distinct red color for complete RDF
+                linewidth = 2.5  # Thicker line to make it stand out
+                linestyle = "-"
+            else:
+                color = pair_to_color.get(name, None)
+                linewidth = 1.5
+                linestyle = "-"
+            
+            axes[iax].plot(r, y, label=name, color=color, linewidth=linewidth, linestyle=linestyle)
 
         # Optionally draw cutoff lines akin to notebook visuals
         if cutoffs:

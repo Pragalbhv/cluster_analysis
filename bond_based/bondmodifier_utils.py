@@ -33,11 +33,11 @@ except Exception as exc:  # pragma: no cover
     raise ImportError("networkx is required for graph construction") from exc
 
 try:
-    from scipy.signal import find_peaks
+    from scipy.signal import find_peaks, savgol_filter
+    from scipy.ndimage import gaussian_filter1d
     SCIPY_AVAILABLE = True
-except ImportError:
-    SCIPY_AVAILABLE = False
-    find_peaks = None  # type: ignore
+except Exception as exc:  # pragma: no cover
+    raise ImportError("Scipy is required for selection of maxima") from exc
 
 # Optional plotting imports are deferred to plot_utils to keep a single style
 try:
@@ -90,14 +90,22 @@ def compute_partial_rdfs(pipeline: Any, nsamples: int = 100, cutoff: float = 8.0
     return rdf_out
 
 
-def find_first_minimum_with_scipy_fallback(
+###########################################################################
+###########################Minimum finding block###########################
+###########################################################################
+
+
+def find_first_minimum(
     r: np.ndarray, 
     g: np.ndarray, 
     min_distance: float = 1.0, 
-    max_distance: float = 6.0,
-    prominence: float = 0.5,
-    smooth_window: int = 5
-) -> Optional[float]:
+    max_distance: float = 8.0,
+    prominence: float = 0.1,
+    smooth_window: int = 11,
+    poly_order: int = 2,
+    smoothing_method: str = 'gaussian',
+    gaussian_sigma: float = 3.0
+) :
     """Find first minimum using scipy's find_peaks with prominence, fallback to custom implementation.
     
     Primary method: Use scipy.signal.find_peaks on inverted g(r) with prominence filtering
@@ -109,87 +117,65 @@ def find_first_minimum_with_scipy_fallback(
         min_distance: Minimum distance to consider
         max_distance: Maximum distance to consider  
         prominence: Minimum prominence for peaks (scipy method only)
-        smooth_window: Window size for smoothing (scipy method only)
+        smooth_window: Window size for smoothing (must be odd for Savitzky-Golay)
+        poly_order: Polynomial order for Savitzky-Golay filter
+        smoothing_method: Method to use ('moving_avg', 'savgol', 'gaussian')
+        gaussian_sigma: Standard deviation for Gaussian smoothing
         
     Returns:
         Distance of first minimum, or None if not found
     """
-    if not SCIPY_AVAILABLE or find_peaks is None:
-        return find_first_minimum_no_scipy(r, g, min_distance, max_distance)
+
+
     
     # Restrict to window
     mask = (r >= min_distance) & (r <= max_distance)
     r_win = r[mask]
     g_win = g[mask]
     if r_win.size < 5:
-        return find_first_minimum_no_scipy(r, g, min_distance, max_distance)
+        print('Window size is less than 5, falling back to custom method')
+        return None
     
     try:
-        # Smooth the data slightly to reduce noise
-        g_smooth = _moving_average(g_win, smooth_window)
+        # Apply smoothing based on selected method
+        if smoothing_method == 'moving_avg':
+            g_smooth = _moving_average(g_win, smooth_window)
+        elif smoothing_method == 'savgol':
+            g_smooth = savgol_smooth(g_win, smooth_window, poly_order)
+        elif smoothing_method == 'gaussian':
+            g_smooth = gaussian_smooth(g_win, gaussian_sigma, mode='nearest')
+        else:
+            raise ValueError(f"Unknown smoothing method: {smoothing_method}. Choose from: 'moving_avg', 'savgol', 'gaussian'")
         
-        # Find the first peak (maximum) to establish search region
-        peak_idx = int(np.argmax(g_smooth))
         
         # Invert g(r) to find minima as peaks
         g_inverted = -g_smooth
+
+        print(g_inverted)
         
         # Find peaks (minima in original) with prominence filtering
         peaks, properties = find_peaks(
             g_inverted, 
             prominence=prominence,
-            distance=1  # Minimum distance between peaks
         )
-        
+        print(peaks)
         if len(peaks) > 0:
             # Find the first minimum after the first peak
             for peak in peaks:
-                if peak > peak_idx:  # Must be after the first peak
-                    # Refine using quadratic interpolation
-                    return _quadratic_refine_minimum(r_win, g_smooth, peak)
+                # Refine using quadratic interpolation
+                return _quadratic_refine_minimum(r_win, g_smooth, peak)
+
+                
         
         # If no suitable peaks found, fall back to custom method
-        return find_first_minimum_no_scipy(r, g, min_distance, max_distance)
+        print('No suitable peaks found, falling back to custom method')
+        # raise ValueError('No suitable peaks found, falling back to custom method')
+        return None
         
     except Exception:
-        # If scipy fails for any reason, fall back to custom method
-        return find_first_minimum_no_scipy(r, g, min_distance, max_distance)
-
-
-def find_first_minimum_no_scipy(r: np.ndarray, g: np.ndarray, min_distance: float = 1.0, max_distance: float = 6.0) -> Optional[float]:
-    """Locate a first minimum in g(r) within [min_distance, max_distance] without SciPy.
-
-    Strategy:
-    - Restrict r, g to the window.
-    - Smooth slightly via a small moving average to reduce noise.
-    - Find the first index after the global maximum where g dips below 1.0; if not,
-      detect a local minimum by checking sign change of discrete derivative.
-    """
-    mask = (r >= min_distance) & (r <= max_distance)
-    r_win = r[mask]
-    g_win = g[mask]
-    if r_win.size < 3:
+        import traceback
+        traceback.print_exc()
         return None
-
-    # simple smoothing (window size 3)
-    if g_win.size >= 3:
-        g_smooth = np.convolve(g_win, np.ones(3) / 3.0, mode='same')
-    else:
-        g_smooth = g_win
-
-    peak_idx = int(np.argmax(g_smooth))
-    # heuristic: first point after peak where g < 1.0
-    for i in range(peak_idx + 1, g_smooth.size):
-        if g_smooth[i] < 1.0:
-            return float(r_win[i])
-
-    # fallback: discrete derivative sign change (max -> min)
-    dg = np.diff(g_smooth)
-    for i in range(max(peak_idx + 1, 1), dg.size - 1):
-        if dg[i - 1] < 0.0 and dg[i] > 0.0:
-            return float(r_win[i])
-
-    return None
 
 
 def _moving_average(values: np.ndarray, window_size: int) -> np.ndarray:
@@ -204,6 +190,21 @@ def _moving_average(values: np.ndarray, window_size: int) -> np.ndarray:
     smoothed = np.convolve(extended, kernel, mode='valid')
     return smoothed
 
+def savgol_smooth(data, window_size, poly_order):
+    """
+    Smooths data using a Savitzky-Golay filter.
+    `window_size` must be odd.
+    `poly_order` must be less than `window_size`.
+    """
+    return savgol_filter(data, window_size, poly_order)
+
+def gaussian_smooth(data, sigma, mode='nearest'):
+    """
+    Smooths data with a 1D Gaussian filter.
+    `sigma` is the standard deviation of the Gaussian kernel.
+    `mode` controls how the array borders are handled (e.g., 'nearest', 'reflect').
+    """
+    return gaussian_filter1d(data, sigma, mode=mode)
 
 def _quadratic_refine_minimum(r: np.ndarray, g: np.ndarray, i: int) -> float:
     """Refine the minimum location using quadratic interpolation around index i.
@@ -221,6 +222,7 @@ def _quadratic_refine_minimum(r: np.ndarray, g: np.ndarray, i: int) -> float:
     dr = float(r[i] - r[i - 1])
     delta = 0.5 * dr * (g_im1 - g_ip1) / denom
     return float(r[i] + delta)
+
 
 
 def find_first_shell_minimum(
@@ -290,7 +292,7 @@ def find_first_shell_minimum(
 def determine_cutoffs_from_rdf(
     rdf: Dict[str, np.ndarray],
     pairs: List[Tuple[str, str]],
-    window: Tuple[float, float] = (2.0, 5.0),
+    window: Tuple[float, float] = (2.0, 8.0),
     fallback: float = 3.10,
     pair_windows: Optional[Dict[Tuple[str, str], Tuple[float, float]]] = None,
 ) -> Dict[Tuple[str, str], float]:
@@ -315,13 +317,7 @@ def determine_cutoffs_from_rdf(
                 win = pair_windows[(B, A)]
             a, b = win
             # Try scipy-based method first, with fallback to custom implementation
-            val = find_first_minimum_with_scipy_fallback(r, g, min_distance=a, max_distance=b)
-            if val is None:
-                # Additional fallback to the more sophisticated shell minimum detector
-                val = find_first_shell_minimum(r, g, min_distance=a, max_distance=b)
-            if val is None:
-                # Final fallback to legacy detector
-                val = find_first_minimum_no_scipy(r, g, min_distance=a, max_distance=b)
+            val = find_first_minimum(r, g, min_distance=a, max_distance=b)
             cutoffs[(A, B)] = float(val) if val is not None else float(fallback)
         else:
             cutoffs[(A, B)] = float(fallback)
@@ -431,6 +427,7 @@ def extract_names_array(parts: Any) -> np.ndarray:
     return np.array([types.type_by_id(t).name for t in particle_types])
 
 
+
 def canonical_cluster_workflow(pipeline: Any, disable_pair: Optional[Tuple[str, str]] = None, metals: Optional[List[str]] = None, anion: str = 'Cl', rdf_samples: int = 100) -> Dict[str, Any]:
     """End-to-end workflow:
     1) compute RDFs, 2) choose cutoffs for (Pu,Cl) and (Na,Cl), 3) create bonds
@@ -441,13 +438,18 @@ def canonical_cluster_workflow(pipeline: Any, disable_pair: Optional[Tuple[str, 
     # Step 2: determine cutoffs for key pairs
     pairs = [("Pu", "Cl"), ("Na", "Cl"), ("Cl", "Pu"), ("Cl", "Na")]
     # compute for unique unordered, then mirror
-    base = determine_cutoffs_from_rdf(rdf, pairs=[("Pu", "Cl"), ("Na", "Cl")])
+    base = determine_cutoffs_from_rdf(rdf, pairs=[("Pu", "Cl"), ("Pu", "Na"), ("Pu", "Pu"), ("Cl", "Pu"), ("Cl", "Na"), ("Cl", "Cl"), ("Na", "Pu"), ("Na", "Cl"), ("Na", "Na")])
     # mirror
     pair_cutoffs = {
         ("Pu", "Cl"): base[("Pu", "Cl")],
-        ("Cl", "Pu"): base[("Pu", "Cl")],
+        ("Pu", "Na"): base[("Pu", "Na")],
+        ("Pu", "Pu"): base[("Pu", "Pu")],
+        ("Cl", "Pu"): base[("Cl", "Pu")],
+        ("Cl", "Na"): base[("Cl", "Na")],
+        ("Cl", "Cl"): base[("Cl", "Cl")],
+        ("Na", "Pu"): base[("Na", "Pu")],
         ("Na", "Cl"): base[("Na", "Cl")],
-        ("Cl", "Na"): base[("Na", "Cl")],
+        ("Na", "Na"): base[("Na", "Na")],
     }
 
     disable_pairs = []
@@ -459,7 +461,7 @@ def canonical_cluster_workflow(pipeline: Any, disable_pair: Optional[Tuple[str, 
     configure_bonds_modifier_from_cutoffs(pipeline, pair_cutoffs, disable_pairs=disable_pairs)
 
     # Step 4: compute one frame and build clusters
-    data = pipeline.compute(0)
+    data = pipeline.compute(pipeline.source.num_frames - 1)
     names = extract_names_array(data.particles)
     sizes, cluster_ids, G = build_shared_anion_graph(data, names, anion=anion, metals=metals)
 
@@ -475,4 +477,36 @@ def canonical_cluster_workflow(pipeline: Any, disable_pair: Optional[Tuple[str, 
 
     return result
 
+def canonical_cluster_workflow_rdfs_only(pipeline: Any, rdf_samples: int = 100) -> Dict[str, Any]:
+    """End-to-end workflow:
+    1) compute RDFs, 2) choose cutoffs for (Pu,Cl) and (Na,Cl), 3) create bonds
+    honoring an optional disabled pair, 4) compute shared-anion clusters and return artifacts.
+    """
+    # Step 1: RDFs
+    rdf = compute_partial_rdfs(pipeline, nsamples=rdf_samples)
+    # Step 2: determine cutoffs for key pairs
+    pairs = [("Pu", "Cl"), ("Na", "Cl"), ("Cl", "Pu"), ("Cl", "Na")]
+    # compute for unique unordered, then mirror
+    base = determine_cutoffs_from_rdf(rdf, pairs=[("Pu", "Cl"), ("Pu", "Na"), ("Pu", "Pu"), ("Cl", "Pu"), ("Cl", "Na"), ("Cl", "Cl"), ("Na", "Pu"), ("Na", "Cl"), ("Na", "Na")])
+    # mirror
+    pair_cutoffs = {
+        ("Pu", "Cl"): base[("Pu", "Cl")],
+        ("Pu", "Na"): base[("Pu", "Na")],
+        ("Pu", "Pu"): base[("Pu", "Pu")],
+        ("Cl", "Pu"): base[("Cl", "Pu")],
+        ("Cl", "Na"): base[("Cl", "Na")],
+        ("Cl", "Cl"): base[("Cl", "Cl")],
+        ("Na", "Pu"): base[("Na", "Pu")],
+        ("Na", "Cl"): base[("Na", "Cl")],
+        ("Na", "Na"): base[("Na", "Na")],
+    }
 
+  
+    
+
+    result = {
+        "rdf": rdf,
+        "pair_cutoffs": pair_cutoffs
+    }
+
+    return result
