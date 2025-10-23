@@ -150,15 +150,12 @@ def find_first_minimum(
         
         # Invert g(r) to find minima as peaks
         g_inverted = -g_smooth
-
-        print(g_inverted)
         
         # Find peaks (minima in original) with prominence filtering
         peaks, properties = find_peaks(
             g_inverted, 
             prominence=prominence,
         )
-        print(peaks)
         if len(peaks) > 0:
             # Find the first minimum after the first peak
             for peak in peaks:
