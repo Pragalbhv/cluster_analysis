@@ -41,7 +41,7 @@ except Exception as exc:  # pragma: no cover
 
 # Optional plotting utilities (reused for consistency)
 try:
-    from plot_utils import (
+    from plots import (
         plot_coordination_histograms as _plot_coordination_histograms,
         plot_graph_structure as _plot_graph_structure,
         plot_cluster_size_distribution as _plot_cluster_size_distribution,

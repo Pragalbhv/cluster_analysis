@@ -39,11 +39,11 @@ try:
 except Exception as exc:  # pragma: no cover
     raise ImportError("Scipy is required for selection of maxima") from exc
 
-# Optional plotting imports are deferred to plot_utils to keep a single style
+# Optional plotting imports are deferred to plots to keep a single style
 try:
-    from .plot_utils import plot_cluster_size_distribution, analyze_bond_network
+    from .plots import plot_cluster_size_distribution, analyze_bond_network
 except Exception:
-    # Fallback: allow import without plot_utils, but plotting helpers will be unavailable
+    # Fallback: allow import without plots, but plotting helpers will be unavailable
     plot_cluster_size_distribution = None  # type: ignore
     analyze_bond_network = None  # type: ignore
 
@@ -425,7 +425,7 @@ def extract_names_array(parts: Any) -> np.ndarray:
 
 
 
-def canonical_cluster_workflow(pipeline: Any, disable_pair: Optional[Tuple[str, str]] = None, metals: Optional[List[str]] = None, anion: str = 'Cl', rdf_samples: int = 100) -> Dict[str, Any]:
+def canonical_cluster_workflow(pipeline: Any, disable_pair: Optional[Tuple[str, str]] = None, metals: Optional[List[str]] = None, anion: str = 'Cl', rdf_samples: int = 100, pair_cutoffs: Optional[Dict[Tuple[str, str], float]] = None) -> Dict[str, Any]:
     """End-to-end workflow:
     1) compute RDFs, 2) choose cutoffs for (Pu,Cl) and (Na,Cl), 3) create bonds
     honoring an optional disabled pair, 4) compute shared-anion clusters and return artifacts.
@@ -434,20 +434,23 @@ def canonical_cluster_workflow(pipeline: Any, disable_pair: Optional[Tuple[str, 
     rdf = compute_partial_rdfs(pipeline, nsamples=rdf_samples)
     # Step 2: determine cutoffs for key pairs
     pairs = [("Pu", "Cl"), ("Na", "Cl"), ("Cl", "Pu"), ("Cl", "Na")]
-    # compute for unique unordered, then mirror
-    base = determine_cutoffs_from_rdf(rdf, pairs=[("Pu", "Cl"), ("Pu", "Na"), ("Pu", "Pu"), ("Cl", "Pu"), ("Cl", "Na"), ("Cl", "Cl"), ("Na", "Pu"), ("Na", "Cl"), ("Na", "Na")])
-    # mirror
-    pair_cutoffs = {
-        ("Pu", "Cl"): base[("Pu", "Cl")],
-        ("Pu", "Na"): base[("Pu", "Na")],
-        ("Pu", "Pu"): base[("Pu", "Pu")],
-        ("Cl", "Pu"): base[("Cl", "Pu")],
-        ("Cl", "Na"): base[("Cl", "Na")],
-        ("Cl", "Cl"): base[("Cl", "Cl")],
-        ("Na", "Pu"): base[("Na", "Pu")],
-        ("Na", "Cl"): base[("Na", "Cl")],
-        ("Na", "Na"): base[("Na", "Na")],
-    }
+    if pair_cutoffs is None:
+            
+        # compute for unique unordered, then mirror
+        base = determine_cutoffs_from_rdf(rdf, pairs=[("Pu", "Cl"), ("Pu", "Na"), ("Pu", "Pu"), ("Cl", "Pu"), ("Cl", "Na"), ("Cl", "Cl"), ("Na", "Pu"), ("Na", "Cl"), ("Na", "Na")])
+        # mirror
+
+        pair_cutoffs = {
+            ("Pu", "Cl"): base[("Pu", "Cl")],
+            ("Pu", "Na"): base[("Pu", "Na")],
+            ("Pu", "Pu"): base[("Pu", "Pu")],
+            ("Cl", "Pu"): base[("Cl", "Pu")],
+            ("Cl", "Na"): base[("Cl", "Na")],
+            ("Cl", "Cl"): base[("Cl", "Cl")],
+            ("Na", "Pu"): base[("Na", "Pu")],
+            ("Na", "Cl"): base[("Na", "Cl")],
+            ("Na", "Na"): base[("Na", "Na")],
+        }
 
     disable_pairs = []
     if disable_pair is not None:
